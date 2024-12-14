@@ -1,0 +1,215 @@
+<main id="main" class="main">
+
+  <div class="col-sm-10  container">
+    <!-- <button type="button" class="btn btn-secondary" id="reservation1">การออกรอบ</button>
+    <button type="button" class="btn btn-secondary" id="reservation_drive1">ไดร์ฟกอล์ฟ</button> -->
+    <div class="row row-cols-1">
+      <div class="col" style="text-align: left;">
+
+        <button type="button" class="btn btn-success" id="hole199" data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop1" style="margin-bottom: 20px; margin-top: 20px;">เพิ่ม 9 hole</button>
+
+        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">ข้อมูลใหม่ hole9</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form class="row g-3" id="Hole9Form">
+                  <div class="col-12">
+                    <!-- <label for="inputEmail4" class="form-label">ID</label> -->
+                    <input type="hidden" class="form-control" id="Course_id_hole9" name="Course_id_hole9">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputStateTime1" class="form-label">เวลา</label>
+                    <select id="inputStateTime1" class="form-select" name="inputStateTime1">
+                      <option selected>Choose...</option>
+                      <option value="15:30">15:30</option>
+                      <option value="15:40">15:40</option>
+                      <option value="16:00">16:00</option>
+                      <option value="16:30">16:30</option>
+                      <option value="16:40">16:40</option>
+                      <option value="17:00">17:00</option>
+                      <option value="17:30">17:30</option>
+
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">วันที่</label>
+                    <input type="date" id="Course_date_19" name="Course_date_19" class="form-control">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">ชื่อ</label>
+                    <input type="text" readonly class="form-control" id="Course_namehole9" value="hole9"
+                      name="Course_namehole9">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputStatedate1" class="form-label">ราคา</label>
+                    <select class="form-select" name="inputStatedate1" id="inputStatedate1">
+                      <option selected>Choose...</option>
+
+
+                    </select>
+
+                  </div>
+                  <div class="col-md-12">
+                    <label for="inputEmail4" class="form-label">จำนวน</label>
+                    <input type="text" readonly value="2" class="form-control" id="number_count" name="number_count">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputAddress" class="form-label">รายละเอียด</label>
+                    <textarea class="form-control" id="Course_detail" name="Course_detail" rows="3"></textarea>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                    <button type="submit" id="savehole9" name="savehole9" class="btn btn-primary"
+                      data-bs-dismiss="modal">บันทึก</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="Promotion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">ปรับโปรโมชัน</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form class="row g-3" id="Promotion">
+                  <div class="col-12">
+                    <!-- <label for="inputEmail4" class="form-label">ID</label> -->
+                    <input type="text" class="form-control" id="Course_hole18" name="Course_hole18" readonly>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="inputStatedate1" class="form-label">ราคา</label>
+                    <input type="text" class="form-control" id="price_pro" name="price_pro">
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                    <button type="submit" id="savePromotion" name="savePromotion" class="btn btn-primary"
+                      data-bs-dismiss="modal">บันทึก</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-success" id="hole188" data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop" style="margin-bottom: 20px; margin-top: 20px;">เพิ่ม 18 hole</button>
+        <button type="button" class="btn btn-success" id="promotion"
+          style="margin-bottom: 20px; margin-top: 20px;">โปรโมชั่น</button>
+        <button type="button" class="btn btn-success" id="reseve"
+          style="margin-bottom: 20px; margin-top: 20px;">การออกรอบ</button>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">ข้อมูลใหม่ hole18</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form class="row g-3" id="Hole18Form">
+                  <div class="col-12">
+                    <!-- <label for="inputEmail4" class="form-label">ID</label> -->
+                    <input type="hidden" class="form-control" id="Course_id_hole18" name="Course_id_hole18">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputStateTime2" class="form-label">เวลา</label>
+                    <select id="inputStateTime2" class="form-select" name="inputStateTime2">
+                      <option selected>Choose...</option>
+                      <option value="6:00">6:00</option>
+                      <option value="6:08">6:08</option>
+                      <option value="6:16">6:16</option>
+                      <option value="6:24">6:24</option>
+                      <option value="6:32">6:32</option>
+                      <option value="6:40">6:40</option>
+                      <option value="6:48">6:48</option>
+                      <option value="6:56">6:56</option>
+                      <option value="7:04">7:04</option>
+                      <option value="7:12">7:12</option>
+                      <option value="7:20">7:20</option>
+                      <option value="7:28">7:28</option>
+                      <option value="7:32">7:32</option>
+                      <option value="7:04">7:04</option>
+                      <option value="7:40">7:40</option>
+                      <option value="7:48">7:48</option>
+                      <option value="7:56">7:56</option>
+                      <option value="8:04">8:04</option>
+                      <option value="8:12">8:12</option>
+                      <option value="8:20">8:20</option>
+                      <option value="8:28">8:28</option>
+                      <option value="8:32">8:32</option>
+                      <option value="8:40">8:40</option>
+                      <option value="8:48">8:48</option>
+                      <option value="9:00">9:00</option>
+                      <option value="11:30">11:30</option>
+                      <option value="11:38">11:38</option>
+                      <option value="11:46">11:46</option>
+                      <option value="11:54">11:54</option>
+                      <option value="12:02">12:02</option>
+                      <option value="12:10">12:10</option>
+                      <option value="12:18">12:18</option>
+                      <option value="12:26">12:26</option>
+                      <option value="12:34">12:34</option>
+                      <option value="12:42">12:42</option>
+                      <option value="12:50">12:50</option>
+                      <option value="12:58">12:58</option>
+                      <option value="13:30">13:30</option>
+                      <option value="13:38">13:38</option>
+                      <option value="13:46">13:46</option>
+                      <option value="13.54">13.54</option>
+                      <option value="14:02">14:02</option>
+                      <option value="14:10">14:10</option>
+                      <option value="14:18">14:18</option>
+                      <option value="14:26">14:26</option>
+                      <option value="14:34">14:34</option>
+
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputStatedate2" class="form-label">วันที่</label>
+                    <input type="date" id="inputStatedate2" name="inputStatedate2" class="form-control">
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">ชื่อ</label>
+                    <input type="text" readonly value="hole18" class="form-control" id="Course_name" name="Course_name">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputStatedate" class="form-label">ราคา</label>
+                    <select class="form-select" name="inputStatedate" id="inputStatedate">
+                      <option selected>Choose...</option>
+
+                    </select>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="inputEmail4" class="form-label">จำนวน</label>
+                    <input type="text" readonly value="2" class="form-control" id="number" name="number">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputAddress" class="form-label">รายละเอียด</label>
+                    <textarea class="form-control" id="Course_detail1" name="Course_detail1" rows="3"></textarea>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                    <button type="submit" id="savehole18" name="savehole18" class="btn btn-primary"
+                      data-bs-dismiss="modal">บันทึก</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Admin_gotf_price"></div>
+</main>
+
+<script src="js/Admin_gotf_price.js"></script>

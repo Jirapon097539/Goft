@@ -1,0 +1,40 @@
+<main id="main" class="main">
+    <div class="col-sm-10 container">
+        <div class="row row-cols-1">
+            <div class="col" style="text-align: left;">
+                <button type="button" class="btn btn-success" id="positionbutton" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    style="margin-bottom: 20px; margin-top: 20px;">เพิ่มข้อมูลตำแหน่ง</button>
+                <div id="show_detailPosition"></div>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">ข้อมูลตำแหน่ง</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="row g-3" id="positionForm" >
+                                    <div class="col-7">
+                                        <label for="inputAddress" class="form-label">รหัสตำแหน่ง</label>
+                                        <input readonly type="text" class="form-control" id="position_id" name="position_id">
+                                    </div>
+                                    <div class="col-7">
+                                        <label for="inputEmail4" class="form-label">ชื่อตำแหน่ง</label>
+                                        <input type="text" class="form-control" id="position_name" name="position_name">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">ปิด</button>
+                                        <button type="submit" id="save" name="save"
+                                            class="btn btn-primary"  data-bs-dismiss="modal">บันทึกข้อมูล</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</main>
+<script src="js/Position.js"></script>

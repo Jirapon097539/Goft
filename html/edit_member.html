@@ -1,0 +1,64 @@
+<main id="main" class="main">
+    <div class="col-sm-8 container">
+        <div class="row row-cols-1">
+            <div class="col" style="text-align: left;">
+                <div class="card">
+                    <div class="card-header alert-light text-white" style="background-color: rgb(186, 186, 186);">
+                        Account Information <br>
+                    </div>
+                    <div class="card-body">
+                        <span style="margin-left: 25px;">Edit your personal information.</span> 
+                        <form id="edit_memberForm">
+                            <div class="row" style="margin: 0 10px;">
+                                <div class="col-12">
+                                    <label style="margin-bottom: 10px;">Username</label>
+                                    <input type="text" class="form-control" aria-label="Username" id="Username" name="Username" readonly>
+                                </div>
+                            </div>
+                            <div class="row" style="margin: 0 10px;">
+                                <div class="col-6">
+                                    <label style="margin-bottom: 10px;">First Name</label>
+                                    <input type="text" class="form-control" aria-label="First name" id="Member_firstname" name="Member_firstname">
+                                </div>
+                                <div class="col-6">
+                                    <label style="margin-bottom: 10px;">Last Name</label>
+                                    <input type="text" class="form-control" aria-label="Last name" id="Member_lastname" name="Member_lastname">
+                                </div>
+                            </div>
+                            <div class="row" style="margin: 10px;">
+                                <div class="col-6">
+                                    <label style="margin-bottom: 10px;">Phone Number</label>
+                                    <input type="text" class="form-control" aria-label="Phone number" id="Member_tel" name="Member_tel">
+                                </div>
+                                <div class="col-6">
+                                    <label style="margin-bottom: 10px;">Email</label>
+                                    <input type="email" class="form-control" aria-label="Email" id="Member_email" name="Member_email">
+                                </div>
+                            </div>
+                            <div class="row" style="margin: 10px;">
+                                <div class="col-6">
+                                    <label style="margin-bottom: 10px;">Line ID</label>
+                                    <input type="text" class="form-control" aria-label="Line ID" id="Member_lineid" name="Member_lineid">
+                                </div>
+                                <div class="col-6">
+                                    <label style="margin-bottom: 10px;">Country</label>
+                                    <select class="form-select" aria-label="Country select" name="nationnality_id" id="nationnality_id">
+                                        <option>choose--</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row" style="margin: 20px 10px 0;">
+                                <div class="col-9"></div>
+                                <div class="col-2">
+                                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="js/edit_member.js"></script>

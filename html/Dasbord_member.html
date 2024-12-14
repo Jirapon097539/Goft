@@ -1,0 +1,111 @@
+<main id="main" class="main container">
+    <section class="member-info mb-5">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">ข้อมูลสมาชิก</h2>
+                <div class="d-flex align-items-center">
+                  
+                    <div>
+                        <p class="mb-1">ชื่อ: สมชาย ใจดี</p>
+                        <p class="mb-1">วันหมดอายุสมาชิก: 31 ธันวาคม 2567</p>
+                        <h3 class="h5">การจองล่าสุด</h3>
+                        <p>การจองวันนี้: ออกรอบเวลา 14:00 น.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="usage-statistics mb-5">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">สถิติการใช้งาน</h2>
+                <h3 class="h5">ประวัติการเข้าใช้งาน</h3>
+                <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item">1 มิถุนายน 2567 เวลา 08:30 น.</li>
+                    <li class="list-group-item">30 พฤษภาคม 2567 เวลา 10:15 น.</li>
+                    <li class="list-group-item">28 พฤษภาคม 2567 เวลา 14:45 น.</li>
+                    <li class="list-group-item">25 พฤษภาคม 2567 เวลา 09:00 น.</li>
+                    <li class="list-group-item">20 พฤษภาคม 2567 เวลา 16:30 น.</li>
+                </ul>
+                <h3 class="h5">จำนวนครั้งที่จองออกรอบ: 15</h3>
+                <h3 class="h5">จำนวนครั้งที่จองไดร์ฟกอล์ฟ: 10</h3>
+            </div>
+        </div>
+    </section>
+    <section class="booking-history mb-5">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">ประวัติการจอง</h2>
+                <form class="mb-3">
+                    <label for="date-range" class="form-label">ดูประวัติการจองย้อนหลัง:</label>
+                    <select id="date-range" class="form-select">
+                        <option value="this-month">เดือนนี้</option>
+                        <option value="this-year">ปีนี้</option>
+                        <option value="custom">กำหนดเอง</option>
+                    </select>
+                </form>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>วันที่จอง</th>
+                                <th>ประเภทการจอง</th>
+                                <th>สถานที่</th>
+                                <th>สถานะการจอง</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>20 พฤษภาคม 2567</td>
+                                <td>ออกรอบ</td>
+                                <td>สนามกอล์ฟ A</td>
+                                <td>สำเร็จ</td>
+                            </tr>
+                            <tr>
+                                <td>15 พฤษภาคม 2567</td>
+                                <td>ไดร์ฟกอล์ฟ</td>
+                                <td>สนามไดร์ฟ B</td>
+                                <td>สำเร็จ</td>
+                            </tr>
+                            <!-- รายการอื่นๆ -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="upcoming-bookings">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">การจองที่ใกล้จะถึง</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>วันที่จอง</th>
+                                <th>ประเภทการจอง</th>
+                                <th>สถานที่</th>
+                                <th>เวลา</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>3 มิถุนายน 2567</td>
+                                <td>ออกรอบ</td>
+                                <td>สนามกอล์ฟ A</td>
+                                <td>14:00 น.</td>
+                            </tr>
+                            <tr>
+                                <td>5 มิถุนายน 2567</td>
+                                <td>ไดร์ฟกอล์ฟ</td>
+                                <td>สนามไดร์ฟ B</td>
+                                <td>16:00 น.</td>
+                            </tr>
+                            <!-- รายการอื่นๆ -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

@@ -1,0 +1,53 @@
+<main id="main" class="main">
+    <div id="showdetailmember"></div>   
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">เปลี่ยนสถานะสมาชิก</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="row g-3" id="memberForm">
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">id</label>
+                        <input type="text" class="form-control" id="id" name="id" readonly>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">เลขบัตรประชาชน</label>
+                        <input type="text" class="form-control" id="Member_identification" name="Member_identification" readonly>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">ชื่อ</label>
+                        <input type="text " class="form-control" id="Member_firstname" name="Member_firstname" readonly>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">นามสกุล</label>
+                        <input type="text" class="form-control" id="Member_lastname" name="Member_lastname" readonly>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">สถานะ</label>
+                        <select class="form-select" name="status_id" id="status_id">
+                            <option selected value="สมาชิกปกติ">สมาชิกปกติ</option>
+                            <option value="ระงับการใช้งานชั่วคราว">ระงับการใช้งานชั่วคราว</option>
+                            <option value="สมาชิกหมดอายุ">สมาชิกหมดอายุ</option>
+
+                        </select>
+                    </div>
+
+                  
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                        <button type="submit" id="save" class="btn btn-primary" data-bs-dismiss="modal">แก้ไข</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="js/Admin_member.js"></script>

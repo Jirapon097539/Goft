@@ -1,0 +1,25 @@
+<main id="main" class="main">
+    <button type="button" class="btn btn-secondary" id="reservation" >Book a tee time</button>
+    <button type="button" class="btn btn-secondary" id="reservation_drive">Book a Golf Cart</button>
+<br><br>
+    <div id="show_detail"> </div>
+    <div class="modal fade" id="caddyModal" tabindex="-1" aria-labelledby="caddyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="caddyModalLabel">Caddy that you have chosen (reservation)</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="caddyModalBody">
+              <!-- Caddy information will be displayed here -->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="color: red;"> **** In the case of payment status completed cannot be cancelled.</div>
+      <div style="color: red;"> **** To cancel, please contact staff at number 0839076635.</div>
+</main>
+<script src="js/Status_re.js"></script>

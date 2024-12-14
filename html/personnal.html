@@ -1,0 +1,75 @@
+<main id="main" class="main">
+
+    <button type="button" class="btn btn-success" id="addPosonal" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+        style="margin-bottom: 20px; margin-top: 20px;">เพิ่มข้อมูลพนักงาน</button>
+     <div id="showdetaillevel"></div>   
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">ข้อมูลพนักงาน</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3" id="personalForm">
+                        <div class="col-7">
+                            <label for="inputAddress" class="form-label">ไอดี</label>
+                            <input type="text" class="form-control" id="Level_id" name="Level_id">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">ชื่อ</label>
+                            <input type="text" class="form-control" id="Level_name" name="Level_name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">นามสกุล</label>
+                            <input type="text" class="form-control" id="Level_surname" name="Level_surname">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">เบอร์โทร</label>
+                            <input type="text" class="form-control" id="Level_tel" placeholder="0000000000"
+                                name="Level_tel">
+                        </div>
+                        <div class="col-6">
+                            <label for="inputAddress2" class="form-label">ชื่อผู้ใช้</label>
+                            <input type="text" class="form-control" id="Level_user" name="Level_user">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" id="labelpa" class="form-label">รหัสผ่าน</label>
+                            <input type="password" class="form-control" id="Level_password" placeholder="xxxxxx"
+                                name="Level_password">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputState" class="form-label">ตำแหน่ง</label>
+                            <select id="inputState" class="form-select" name="position_id" id="position_id">
+                                <!-- <option selected>Choose...</option> -->
+
+                            </select>
+                        </div>
+
+                        <div class='col-md-12'>
+                            <div class='mb-3'>
+                                <img id="imagePreview2" src="" alt="Image Preview"
+                                    style="max-width: 100px; max-height: 100px;">
+                                <input type="file" accept="image/*" onchange="preview2()" name="Level_picture"
+                                    id="Level_picture">
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                            <button type="submit" id="save" class="btn btn-primary" data-bs-dismiss="modal">บันทึก</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</main>
+<!-- End #main -->
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="js/personal.js"></script>

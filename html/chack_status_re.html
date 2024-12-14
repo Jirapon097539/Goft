@@ -1,0 +1,62 @@
+<main id="main" class="main">
+    <button type="button" class="btn btn-secondary" id="reservation1">การจอง</button>
+    <button type="button" class="btn btn-secondary" id="reservation_drive1">การจองไดร์ฟกอล์ฟ</button>
+    <br><br>
+    <div id="show_detail"> </div>
+    <!-- Modal HTML caddyModal -->
+    <div class="modal fade" id="caddyModal" tabindex="-1" aria-labelledby="caddyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="caddyModalLabel">Caddy ที่คุณได้เลือกไว้(การจอง)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="caddyModalBody">
+                    <!-- Caddy information will be displayed here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------- -->
+
+    <!-- Modal HTML cancelModal -->
+    <div class="modal fade" id="cancelModal" tabindex="-1" role="dialog" aria-labelledby="cancelModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cancelModalLabel">Reason for Cancellation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="cancelForm">
+                        <div class="form-group">
+                            <label for="cancelReason">เหตุผล:</label>
+                            <textarea class="form-control" id="cancelReason" name="cancelReason" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="cancelReason">รหัสการจอง:</label>
+                            <input class="form-control" type="text" id="bookId" name="bookId" readonly>
+                        </div>
+                       
+                        <button type="submit" class="btn btn-primary" id="btnCencel">Submit</button>
+                    </form>
+                </div>
+                <div class="container" style="margin: 4%;">
+                      <div style="color: red;">** จำเป็นต้องกรอกสาเหตุในการยกเลิก</div>
+                <div style="color: red;">** ระบุด้วยว่าชำระเงินคืนแล้วหรือไม่</div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+    <!-- ------------- -->
+
+    
+</main>
+<script src="js/chack_status_re.js"></script>

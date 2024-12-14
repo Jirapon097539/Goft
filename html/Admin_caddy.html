@@ -1,0 +1,68 @@
+<main id="main" class="main">
+    <div class="col-sm-10 container">
+        <div class="row row-cols-1">
+            <div class="col" style="text-align: left;">
+                <button type="button" class="btn btn-success" id="caddybutton" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    style="margin-bottom: 20px; margin-top: 20px;">เพิ่มข้อมูลแค๊ดดี๊</button>
+
+                    <div id="showdetailcaddy"></div>   
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">ข้อมูลแค๊ดดี๊</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="row g-3" id="caddyForm" >
+                                    <div class="col-7">
+                                        <label for="inputAddress" class="form-label">รหัสแคดดี้</label>
+                                        <input type="text" class="form-control" id="Caddy_number" name="Caddy_number" >
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputEmail4" class="form-label">ชื่อ</label>
+                                        <input type="text" class="form-control" id="Caddy_name" name="Caddy_name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputPassword4" class="form-label">นามสกุล</label>
+                                        <input type="text" class="form-control" id="Caddy_lastname"
+                                            name="Caddy_lastname">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="inputAddress" class="form-label">ชื่อเล่น</label>
+                                        <input type="text" class="form-control" id="Caddy_nickname"
+                                            name="Caddy_nickname">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputState" class="form-label">สถานะ</label>
+                                        <select class="form-select" name="caddy_status" id="caddy_status">
+                                            <option selected value="on">เปิดการใช้งาน</option>
+                                            <option value="off">ปิดการใช้งาน</option>
+                
+                                        </select>
+                                    </div>
+                                    <div class='col-md-12'>
+                                        <div class='mb-3'>
+                                            <img id="imagePreview2" src="" alt="Image Preview"
+                                                style="max-width: 100px; max-height: 100px;">
+                                            <input type="file" accept="image/*" onchange="preview2()" name="Caddy_picture"
+                                                id="Caddy_picture">
+            
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">ปิด</button>
+                                        <button type="submit" id="save" name="save"
+                                            class="btn btn-primary"  data-bs-dismiss="modal">บันทึกข้อมูล</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</main>
+<script src="js/Admin_caddy.js"></script>

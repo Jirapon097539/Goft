@@ -1,0 +1,66 @@
+<main id="main" class="main">
+    <div class="row">
+        <div class="col">
+            <div id="show_golf"></div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">จองการไดร์ฟกอล์ฟ</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form class="row g-3" id="drivingForm">
+
+                        <div class="col-md-12">
+                            <label for="inputEmail4" class="form-label">id log</label>
+                            <input readonly type="text" class="form-control" id="log_id" name="log_id">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Time(hour.)</label>
+                            <input type="text" class="form-control" id="time_driving" name="time_driving">
+                        </div>
+                        <div class="col-6">
+                            <label for="inputAddress" class="form-label">date</label>
+                            <input type="date" class="form-control" id="driving_date" name="driving_date">
+                        </div>
+                        <div class="col-6">
+                            
+                            <label for="inputAddress" class="form-label">number driveing(20 unit)</label>
+                            <input type="number" class="form-control" id="driving_number" name="driving_number">
+                        </div>
+                        <div class="col-6">
+                            <label for="inputAddress" class="form-label">price</label>
+                            <input type="text" class="form-control" id="driving_price" name="driving_price" readonly>
+                        </div>
+                        <div class="col-6">
+                            <label for="" class="form-label">Money
+                                transfer
+                                slip</label>
+                            <input required type="file" accept="image/*" class="form-control" onchange="preview2()"
+                                name="re_picture" id="re_picture">
+                        </div>
+                        <div class="col-6 " >
+                            <img id="imagePreview2" src="" alt="Image Preview"style="max-width: 150px; max-height: 180px; margin-left: 80px; margin-left:50px">
+                        </div>
+                        <!-- <br>            
+                        <div style="color: red; margin: 10;">***นำเงินชำระที่หน้าเคาน์เตอร์แคชเชียร  ในวันที่คุณได้ทำการจอง</div>
+                        <div style="color: red; margin: 10;">***กรณีที่ไม่มาตามวันและเวลาที่จอง ทางเราจะทำการยกเลิกการจองทันที</div>   -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                            <button type="submit" id="save" name="save" class="btn btn-primary"
+                                data-bs-dismiss="modal">save</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="js/golf_driving.js"></script>

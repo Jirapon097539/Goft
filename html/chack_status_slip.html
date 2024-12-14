@@ -1,0 +1,114 @@
+<main id="main" class="main">
+    <button type="button" class="btn btn-secondary" id="slip_reservation1">ตรวจสอบการจอง</button>
+    <button type="button" class="btn btn-secondary" id="slip_reservation_drive1">ตรวจสอบการจองไดร์ฟกอล์ฟ</button>
+    <br><br>
+    <div id="show_details"> </div>
+
+    <!-- Modal HTML staticBackdrop -->
+
+    <div class="modal fade" id="drive" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-4" id="exampleModalLabel">สลิปการชำระเงิน drive</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class='mb-3'>
+                                <img id="imagePreview2" src="" alt="Image Preview"
+                                    style="max-width: 300px; max-height: 650px; margin-left: 50px;">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="row">
+                                <form  id="priceForm">
+                                    <div class="col-12">
+                                        <label for="inputAddress" class="form-label">Book_id</label>
+                                        <input type="text" class="form-control form-control-lg" id="bookId" name="bookId" readonly>
+                                    </div><br>
+                                    <div class="col-12">
+                                        <label for="inputAddress" class="form-label">ชื่อ-สกุล</label>
+                                        <input type="text" class="form-control form-control-lg" id="name_pr" name="name_pr" readonly>
+                                    </div><br>
+                                    <div class="col-12">
+                                        <label for="inputEmail4" class="form-label">จำนวนเงิน</label>
+                                        <input type="text" class="form-control form-control-lg" id="number_pr" name="number_pr" readonly>
+                                    </div><br>
+                                  
+                                    <div class="modal-footer">
+                                        <button type="button" id="save" name="save" class="btn btn-primary"
+                                            data-bs-dismiss="modal">ข้อมูลถูกต้อง</button>
+                                    </div>
+    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal HTML staticBackdrop  drive-->
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-4" id="exampleModalLabel">สลิปการชำระเงิน</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class='mb-3'>
+                                <img id="imagePreview21" src="" alt="Image Preview"
+                                    style="max-width: 650px; max-height: 650px; margin-left: 50px;">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="row">
+                                <form  id="priceForm">
+                                    <div class="col-12">
+                                        <label for="inputAddress" class="form-label">Book_id</label>
+                                        <input type="text" class="form-control form-control-lg" id="bookId1" name="bookId" readonly>
+                                    </div><br>
+                                    <div class="col-12">
+                                        <label for="inputAddress" class="form-label">ชื่อ-สกุล</label>
+                                        <input type="text" class="form-control form-control-lg" id="name_pr1" name="name_pr" readonly>
+                                    </div><br>
+                                    <div class="col-12">
+                                        <label for="inputEmail4" class="form-label">จำนวนเงิน</label>
+                                        <input type="text" class="form-control form-control-lg" id="number_pr1" name="number_pr" readonly>
+                                    </div><br>
+                                    <div class="col-12">
+                                        <label for="inputEmail4" class="form-label">เวลาที่ชำระ</label>
+                                        <input type="text" class="form-control form-control-lg" id="time_pr1" name="time_pr" readonly>
+                                    </div><br>
+                                    <div class="col-12">
+                                        <label for="inputEmail4" class="form-label">วันที่ชำระ</label>
+                                        <input type="text" class="form-control form-control-lg" id="date_pr1" name="date_pr" readonly>
+                                    </div><br>
+                                    <div class="modal-footer">
+                                        <button type="button" id="save1" name="save" class="btn btn-primary"
+                                            data-bs-dismiss="modal">ข้อมูลถูกต้อง</button>
+                                    </div>
+    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</main>
+<script src="js/chack_status_slip.js"></script>

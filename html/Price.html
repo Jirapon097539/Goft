@@ -1,0 +1,40 @@
+<main id="main" class="main">
+    <div class="col-sm-10 container">
+        <div class="row row-cols-1">
+            <div class="col" style="text-align: left;">
+                <button type="button" id="btnAdd" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    style="margin-bottom: 20px; margin-top: 20px;">เพิ่มข้อมูลราคา</button>
+                <div id="show_detailPrice"></div>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">ข้อมูลราคา</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="row g-3" id="priceForm" >
+                                    <div class="col-7">
+                                        <label for="inputAddress"  class="form-label">รหัสราคา</label>
+                                        <input type="text" readonly class="form-control" id="price_id" name="price_id">
+                                    </div>
+                                    <div class="col-7">
+                                        <label for="inputEmail4" class="form-label">ราคา</label>
+                                        <input type="text" class="form-control" id="price_name" name="price_name">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">ปิด</button>
+                                        <button type="submit" id="save" name="save"
+                                            class="btn btn-primary"  data-bs-dismiss="modal">บันทึกข้อมูล</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</main>
+<script src="js/Price.js"></script>
