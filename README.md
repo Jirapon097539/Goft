@@ -85,11 +85,7 @@
  
 </table>
 
-### Cashier Panel  
-![Cashier Panel](link-to-cashier-screenshot)  
 
-### Manager Panel  
-![Manager Panel](link-to-manager-screenshot)  
 
 ---
 
