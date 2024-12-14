@@ -56,10 +56,25 @@
 
 ---
 
-## Screenshots  
+
+## รูปภาพตัวอย่าง
 
 ### Admin Panel  
-![Admin Panel](link-to-admin-screenshot)  
+<table>
+  <tr>
+    <td align="center"><img src="image-admin/Admin-1.png" alt="รูป 1" height="350"><br><b>ภาพที่ 1</b></td>
+    <td align="center"><img src="image-admin/Admin-2.png" alt="รูป 4" width="800" height="350"><br><b>ภาพที่ 4</b></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="image-admin/Admin-3.png" alt="รูป 7" width="900" height="350"><br><b>ภาพที่ 7</b></td>
+    <td align="center"><img src="image-admin/Admin-4.png" alt="รูป 8" width="900" height="350"><br><b>ภาพที่ 8</b></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="image-admin/Admin-5.png" alt="รูป 7" width="900" height="350"><br><b>ภาพที่ 7</b></td>
+    <td align="center"><img src="image-admin/Admin-6.png" alt="รูป 8" width="900" height="350"><br><b>ภาพที่ 8</b></td>
+  </tr>
+</table>
+
 
 ### User Panel  
 ![User Panel](link-to-user-screenshot)  
