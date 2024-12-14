@@ -77,7 +77,13 @@
 
 
 ### User Panel  
-![User Panel](link-to-user-screenshot)  
+<table>
+  <tr>
+    <td align="center"><img src="image-user/user-1.png" alt="รูป 1" height="350"><br><b>ภาพที่ 1</b></td>
+    <td align="center"><img src="image-user/user-2.png" alt="รูป 4" width="800" height="350"><br><b>ภาพที่ 4</b></td>
+  </tr>
+ 
+</table>
 
 ### Cashier Panel  
 ![Cashier Panel](link-to-cashier-screenshot)  
